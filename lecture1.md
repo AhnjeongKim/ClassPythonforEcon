@@ -45,7 +45,7 @@ author: 김안정
 
 </br>
 
-강의자료 및 실습 데이터: 
+강의자료 및 실습 데이터: https://github.com/AhnjeongKim/ClassPythonforEcon/tree/main
 
 
 ---
