@@ -91,7 +91,7 @@ author: 김안정
 
 1. Python.org 다운로드 페이지에서 설치 프로그램을 내려받은 후 설치한다.
 2.  (Window 환경에서는) 명령 프롬프트나 WindowPowerShell 등을 통해 실행한다.
-![width:400](/images/install2.png) ![width:500](/images/install3.png)
+![width:400](images/install2.png) ![width:500](images/install3.png)
 
 * Mac 환경에서는 터미널을 통해 실행한다. 
 
@@ -107,7 +107,7 @@ author: 김안정
 
 R studio도 R을 위한 IDE의 한 종류이다. 
 
-![width:300](/images/ide1.png)
+![width:300](images/ide1.png)
 
 ---
 ## Python 설치 방법 (2) : Anaconda 설치
@@ -119,14 +119,14 @@ R studio도 R을 위한 IDE의 한 종류이다.
 1. 공식 홈페이지에서 다운로드 https://www.anaconda.com/download
 2. 설치하기
 3. Anaconda Prompt(anaconda3)을 실행하여 설치 확인
-![width:300](/images/conda1.png) ![width:300](/images/conda3.png) ![width:300](/images/conda4.png)
+![width:300](images/conda1.png) ![width:300](images/conda3.png) ![width:300](images/conda4.png)
 ---
 ## Jupyter Notebook
 - 오픈 소스 웹 어플리케이션으로 코드 작성, 시각화 및 문서 작성이 가능한 도구이다.
 - 코드를 한줄씩 실행하면서 결과를 확인할 수 있는 대화형 환경을 제공한다. 
 - 프로그램을 실행할 수 있는 코드 셀과, 이미지, 텍스트 등을 삽입하는 마크다운 셀로 구성되어 있어 작업을 문서화 할 수 있다.
 - 명령 프롬프트를 통해 별도로 설치하거나, Anaconda를 통해 Python과 함께 설치한다.
-![width:950](/images/jupyter1.png)
+![width:950](images/jupyter1.png)
 노트북 예시 : https://github.com/donnemartin/data-science-ipython-notebooks/blob/master/scikit-learn/scikit-learn-random-forest.ipynb
 
 ---
@@ -140,7 +140,7 @@ R studio도 R을 위한 IDE의 한 종류이다.
 1. 'https://colab.research.google.com/' 에 접속한다.
 2. 구글 드라이브에 로그인을 하고 파일 > 새로운 노트북 만들기를 실행한다.
 
-![width:400](/images/colab0.png)  ![width:400](/images/colab1.png)
+![width:400](images/colab0.png)  ![width:400](images/colab1.png)
 
 ---
 ## Python 설치 방법 (3) : 구글 Colab 
@@ -149,7 +149,7 @@ R studio도 R을 위한 IDE의 한 종류이다.
 print("Hello World")
 ```
 5. 실행버튼(▷)을 클릭하고 실행 결과를 확인한다. 
-![width:500](/images/colab2.png) ![width:500](/images/colab3.png)
+![width:500](images/colab2.png) ![width:500](images/colab3.png)
 
 * 마크다운: 텍스트 기반의 마크업 언어로 텍스트만으로 서식있는 문서로, git hub나 notion등에서 양식 있는 게시물들을 작성할 때 자주 사용된다. 
 
@@ -203,7 +203,7 @@ f*2
 * 같은 성질을 갖는 원소들이 순서대로 구성된 선형 자료 구조이다. 
 * Index를 통해 데이터를 참조하며, 고정된 크기를 갖는다. (Python의 index는 0부터 시작한다.)
 * 1차원, 2차원, 다차원 배열
-![width:700](/images/array1.png)
+![width:700](images/array1.png)
 
 #### 배열 생성하기
 ```
@@ -299,7 +299,7 @@ os.getcwd()  #디렉토리 경로 확인
 
 #### 참고2: 구글 Colab 작업 디렉토리에 파일 업로드하기
 
-![](/images/directory1.png)
+![](images/directory1.png)
 ---
 
 ---
@@ -309,7 +309,9 @@ os.getcwd()  #디렉토리 경로 확인
 ```
 df.describe()
 ```
-![](/images/stat1.png)
+![](images/stat1.png)
+
+---
 
 * 직접 계산해보기
 ```
@@ -330,7 +332,7 @@ import matplotlib.pyplot as plt  #matplotlib의 pyplot을 plt라는 이름으로
 plt.scatter(x,y)
 plt.show()
 ```
-![width:450](/images/scatterplot1.png)
+![width:450](images/scatterplot1.png)
 
 ---
 ## 3. 데이터로 실습해보기 
@@ -341,8 +343,8 @@ plt.show()
 ```
 from statsmodels.formula.api import ols  # statsmodel 라이브러리 불러오기
 
-model= ols(formula='SAT~GPA',data=df).fit().summary()
-print(model)
+model= ols(formula='SAT~GPA',data=df).fit()
+print(model.summary())
 ```
 
 ```

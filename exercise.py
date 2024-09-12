@@ -30,7 +30,7 @@ plt.show()
 
 
 # 단순선형회귀 분석
-model= ols(formula='SAT~GPA',data=df).fit().summary()
-print(model)
+model= ols(formula='SAT~GPA',data=df).fit()
+print(model.sumary())
 print('parameters',model.params)
 print('R2',model.rsquared)
